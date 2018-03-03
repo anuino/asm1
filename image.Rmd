@@ -1,0 +1,19 @@
+---
+title: "image"
+output: html_document
+---
+ 
+
+```{r}
+
+tiger <- image_read('http://jeroen.github.io/images/tiger.svg')
+image_info(tiger)
+```
+```{r}
+# Render svg to png bitmap
+image_write(tiger, path = "tiger.png", format = "png")
+```
+```{r}
+tiger
+```
+
